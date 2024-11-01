@@ -1,0 +1,665 @@
+body{
+    margin:0px;
+}
+h1 {
+    color: #005a83;
+    margin-top: 0;
+    clear:none !important;
+}
+.just_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+img.arrow {
+    position: absolute;
+    right: 6px;
+    top: 27px;
+}
+.ctas h3{
+    color: #fff;
+}
+.ctas{
+    min-width: 200px;
+    min-height: 60px;
+    margin-right: 15px;
+    float: left;
+    display: block;
+    border: 1px solid #e17c00;
+    position: relative;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 10px;
+    padding-right: 40px;
+    background: #f2a732;
+}
+.ptool-smalllogo{
+    height:16px;
+    width:16px;
+}
+.ptool-headtext{
+    margin-top: 0px;
+}
+#ptool-postcode-research-wrap{
+    width:600px;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.closeicon{
+    margin-top: 20px;
+    width: 40px;
+    margin-right: 20px;
+}
+.ptool-inner {
+    width: 550px;
+    position: relative;
+    margin: 0 auto;
+    zoom: 1;
+    padding:8px;
+}
+.ptool-inner:after {  
+    clear: both;
+}
+.ptool-inner:before, .ptool-inner:after { 
+    content: "";
+    display: table;
+}
+.ptool-embedCodeContainer a img{
+    box-shadow:none;
+}
+.ptool-headerText h1{
+    font-size: 24px;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 5px 8px;
+    color: #666;
+    border: 1px solid #dddddd;
+    background: #FFF;
+    margin-bottom: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: -moz-linear-gradient(top, #999999 0%, #ffffff 12%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999999), color-stop(12%, #ffffff));
+    background: -webkit-linear-gradient(top, #999999 0%, #ffffff 12%);
+    background: -o-linear-gradient(top, #999999 0%, #ffffff 12%);
+    background: -ms-linear-gradient(top, #999999 0%, #ffffff 12%);
+    background: linear-gradient(top, #999999 0%, #ffffff 12%);
+}
+input[type="submit"] {
+    position: relative;
+    background: #ed9200;
+    padding: 3px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    border: 0;
+    text-transform: lowercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: -moz-linear-gradient(top, #f1a833 0%, #f1a833 49%, #ed9200 50%, #ed9200 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1a833), color-stop(49%, #f1a833), color-stop(50%, #ed9200), color-stop(100%, #ed9200));
+    background: -webkit-linear-gradient(top, #f1a833 0%, #f1a833 49%, #ed9200 50%, #ed9200 100%);
+    background: -o-linear-gradient(top, #f1a833 0%, #f1a833 49%, #ed9200 50%, #ed9200 100%);
+    background: -ms-linear-gradient(top, #f1a833 0%, #f1a833 49%, #ed9200 50%, #ed9200 100%);
+    background: linear-gradient(top, #f1a833 0%, #f1a833 49%, #ed9200 50%, #ed9200 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr= #f1a833 , EndColorStr= #ed9200 , GradientType=0);
+    border: none;
+}
+#ptool-postcodeResearchContainer {
+    font-family: arial;
+    position: relative;
+}
+#ptool-postcodeResearchContainer .moreContainer {
+    text-align: center;
+    color: white;
+    background: white;
+    min-height: 80px;
+}
+#ptool-postcodeResearchContainer .moreContainer #more {
+    position: relative;
+    float: center;
+    margin: auto;
+    background: none;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+#ptool-postcodeResearchContainer .moreContainer #more:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ED9200;
+}
+#ptool-postcodeResearchContainer .moreContainer .triangle {
+
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #ED9200;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+#ptool-postcodeResearchContainer .moreContainer .triangle.pulsate {
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+#ptool-postcodeResearchContainer .moreContainer .moreText {
+    position: absolute;
+    top: 5px;
+    font-size:13px;
+    left: 35%;
+}
+#ptool-postcodeResearchContainer .hidden {
+    display: none !important;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer {
+    background-color: #F2F2F2;
+    width: 100%;
+    border-bottom: 3px solid #005982;
+    padding-top: 15px;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .ptool-headerText h1 {
+    text-align:center;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .ptool-headerText a {
+    color: #EC9100;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .searchDesc p {
+    font-size: 14px;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .searchContainer {
+    padding-top: 8px;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .searchBar {
+    float: left;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    margin-right: 3%;
+}
+#ptool-postcodeResearch{
+    width:550px;
+    margin:auto;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .searchBar input[type="text"] {
+    width: 381px;
+    height: 45px;
+    font-size: 20px;
+    background: none;
+    background: #FFF;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .searchBar input[type="submit"] {
+    width: 141px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 50px ;
+    color: #FFF;
+    font-size: 20px;
+    text-transform: capitalize;
+    background: none;
+    background: #ED9200;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .poweredLogo {
+    float: left;
+    width: 10%;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeSearchContainer .embedCodeContainer {
+    float: left;
+    width: 295px;
+    height: 65px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 2%;
+}
+#ptool-postcodeResearchContainer .postcodeSearchContainer .embedCodeContainer .embedHeading {
+    float: left;
+    padding-left: 1%;
+    width: 58%;
+    padding-bottom: 8%;
+    padding-top: 7%;
+}
+#ptool-postcodeResearchContainer .postcodeSearchContainer .embedCodeContainer .embedGenerate {
+    float: left;
+    width: 30%;
+    padding-left: 1%;
+    padding-top: 6%;
+    padding-bottom: 8%;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer {
+    background-color: white;
+    width: 100%;
+    font-size: 17px;
+    padding-bottom: 2%;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultHeader {
+    font-size: 20px;
+    color: #808080;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultWrapper {
+    color: #4D4D4D;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultWrapper .ptool-resultColumn {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultWrapper .ptool-resultColumn ul {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultWrapper .ptool-resultColumn ul > li {
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultWrapper .ptool-resultColumn ul.col1UL {
+    padding: 1em;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultWrapper .ptool-resultColumn ul.col1UL > li {
+    margin-bottom: 5px;
+}
+#ptool-postcodeResearchContainer .ptool-postcodeResultContainer .ptool-resultWrapper .ptool-resultColumn .embedCodeContainer {
+    width: 66%;
+    margin-left: 1%;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper {
+    background-color: #F2F2F2;
+    width: 100%;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .noteContainer {
+    float: left;
+    color: #005A83;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .noteContainer p {
+    font-size: 16px;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer {
+    float: left;
+    width:100%;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .sponsorBanner {
+    float: left;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 96px;
+    border: 1px solid grey;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBanner img {
+    width: 100%;
+    height: 96px;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBanner .ptool-sponsorBannerWrapper {
+    text-align: center;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBanner .ptool-sponsorBannerWrapper .ptool-sponsorBannerText {
+    margin: auto;
+    padding-top: 1%;
+    padding-left: 5%;
+    color: #666666;
+    font-size: 24px;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBanner .ptool-sponsorBannerWrapper .ptool-sponsorBannerText h1 {
+    color: #ED1C24;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBanner .ptool-sponsorBannerWrapper .ptool-sponsorBannerImg {
+    float: right;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-embedCodeContainer {
+    width: 430px;
+    margin:0 auto;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBoxContainer {
+    width: 76%;
+    padding-left: 1%;
+    float: left;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBoxContainer .ptool-sponsorBox {
+    float: left;
+    margin-right: 22px;
+    margin-bottom: 20px;
+}
+#ptool-postcodeResearchContainer .ptool-sponsorsWrapper .sponsorsContainer .ptool-sponsorBoxContainer .ptool-sponsorBox img {
+    width: 221px;
+    height: 124px;
+}
+.modala{
+    color:#ED9200;
+}
+#ptool-modal-background {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 880px;
+    background-color: black;
+    opacity: .85;
+    -webkit-opacity: .85;
+    -moz-opacity: .85;
+    filter: alpha(opacity=85);
+    z-index: 980;
+}
+#ptool-modal-link-content {
+    font-family: arial;
+    background-color: white;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 20px 0 #222222;
+    -moz-box-shadow: 0 0 20px 0 #222222;
+    box-shadow: 0 0 20px 0 #222222;
+    display: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 96%;
+    height: 94% !important;
+    z-index: 1000;
+    max-width: 1800px;
+    min-width: 480px;
+}
+#ptool-modal-link-content .ptool-modal-link-header {
+    float: left;
+    width: 98%;
+    height: 160px;
+    background: #F2F2F2;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper {
+    width: 100%;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-headerText {
+    text-align:center;
+    padding: 40px;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-headerText h1 {
+    font-size: 23px;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-headerText a {
+    color: #EC9100;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-backLink {
+    float: left;
+    cursor: pointer;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-poweredLogo {
+    float: right;
+    padding-right: 1%;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-embedCodeContainer {
+    float: right;
+    width: 295px;
+    height: 65px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-embedCodeContainer .ptool-embedHeading {
+    float: left;
+    padding-left: 1%;
+    width: 58%;
+    padding-bottom: 8%;
+    padding-top: 6%;
+}
+#ptool-modal-link-content .ptool-modal-link-header .ptool-modal-link-header-wrapper .ptool-embedCodeContainer .ptool-embedGenerate {
+    float: left;
+    width: 30%;
+    padding-left: 1%;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+#ptool-modal-link-content .ptool-modal-link-body {
+    clear: both;
+    float: left;
+    width: 98%;
+    height: 80%;
+    position: relative;
+}
+#ptool-modal-link-content .ptool-modal-link-body .ptool-modal-link-iframe {
+    width: 100%;
+    height: 90%;
+    border: none;
+}
+#ptool-modal-link-content .ptool-modal-link-body #map-canvas {
+    float: left;
+    text-align:center;
+}
+#ptool-modal-link-content #ptool-modal-close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color:#000;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+#ptool-embedCodeModal {
+    font-family: arial;
+    overflow: scroll;
+    background-color: white;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 20px 0 #222222;
+    -moz-box-shadow: 0 0 20px 0 #222222;
+    box-shadow: 0 0 20px 0 #222222;
+    display: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    position: absolute;
+    margin: auto;
+    top: 1%;
+    left: 2%;
+    width: 92%;
+    z-index: 1050;
+}
+#ptool-embedCodeModal .embedWrapper {
+    padding-left: 2%;
+    width: 50%;
+    float: left;
+}
+#ptool-embedCodeModal .embedInstructions {
+    float: left;
+    width: 38%;
+    margin-left: 2%;
+}
+#ptool-embedCodeModal .embedInstructions h1 {
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+}
+#ptool-embedCodeModal #embedCodeHeader {
+    font-size: 24px;
+    color: #005982;
+    margin-bottom: 2%;
+}
+#ptool-embedCodeModal #embedCustomize {
+    font-size: 16px;
+    font-weight: bold;
+}
+#ptool-embedCodeModal #embedCustomize #embedProportions {
+    font-size: 14px;
+    font-weight: normal;
+}
+#ptool-embedCodeModal #embedCustomize #embedProportions label {
+    color: #333;
+    font-weight: normal;
+}
+#ptool-embedCodeModal #embedCustomize #embedProportions input[type="text"] {
+    background: none;
+}
+#ptool-embedCodeModal #embedCustomize fieldset {
+    font-size: 14px;
+    padding-top: 10px;
+}
+#ptool-embedCodeModal #embedCustomize fieldset label {
+    color: #333;
+    font-weight: normal;
+}
+#ptool-embedCodeModal #embedCustomize fieldset input[type="radio"] {
+    color: black;
+    padding-top: 2px;
+    margin-bottom: 15px;
+}
+#ptool-embedCodeModal #embedPreview {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    padding-top: 1%;
+}
+#ptool-embedCodeModal #embedPreview #previewWrapper {
+    padding-top: 2%;
+}
+#ptool-embedCodeModal #embedCodeArea {
+    font-size: 16px;
+    clear: both;
+}
+#ptool-embedCodeModal #embedCodeArea textarea {
+    margin-top: 1%;
+    min-width: 435px;
+    min-height: 136px;
+    background: none;
+}
+#ptool-embedCodeModal #embed-modal-close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+#ptool-modal-background.active,
+#ptool-modal-link-content.active,
+#ptool-embedCodeModal.active {
+    display: block;
+}
+#ptool-property118-research-tool {
+    min-width: 100px!important;
+    font-family: arial;
+    background: #EC9100;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding: 15px;
+    color: #FFF;
+}
+#ptool-property118-research-tool #property118-research-tool-header {
+    font-size: 23px;
+    padding-bottom: 10px;
+    float: left;
+}
+#ptool-property118-research-tool #property118-research-tool-text {
+    font-size: 17px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    clear: both;
+    font-style: italic;
+}
+#ptool-property118-research-tool #property118-research-tool-button {
+    float: left;
+    margin-right: 2%;
+}
+#ptool-property118-research-tool #property118-research-tool-button input[type="submit"] {
+    cursor: pointer;
+    width: 100px;
+    height: 29px;
+    position: relative;
+    background: #005982;
+    padding: 3px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    border: 0;
+    text-transform: capitalize;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: -moz-linear-gradient(top, #2c7189 0%, #2c7189 49%, #005982 50%, #005982 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c7189), color-stop(49%, #2c7189), color-stop(50%, #005982), color-stop(100%, #005982));
+    background: -webkit-linear-gradient(top, #2c7189 0%, #2c7189 49%, #005982 50%, #005982 100%);
+    background: -o-linear-gradient(top, #2c7189 0%, #2c7189 49%, #005982 50%, #005982 100%);
+    background: -ms-linear-gradient(top, #2c7189 0%, #2c7189 49%, #005982 50%, #005982 100%);
+    background: linear-gradient(top, #2c7189 0%, #2c7189 49%, #005982 r 50%, #005982 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr= #2c7189 , EndColorStr= #005982 , GradientType=0);
+}
+.iframescroll-wrapper{
+   -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    height:100%;
+}
